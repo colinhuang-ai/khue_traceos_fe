@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Kinetic Precision Color Palette */
+  --color-brand-surface: #fcf8fa;
+  --color-brand-surface-dim: #dcd9db;
+  --color-brand-surface-bright: #fcf8fa;
+  --color-brand-lowest: #ffffff;
+  --color-brand-low: #f6f3f5;
+  --color-brand-container: #f0edef;
+  --color-brand-high: #eae7e9;
+  --color-brand-highest: #e4e2e4;
+  
+  --color-brand-on-surface: #1b1b1d;
+  --color-brand-on-surface-variant: #45464d;
+  --color-brand-inverse-surface: #303032;
+  
+  --color-brand-primary: #000000;
+  --color-brand-secondary: #4b41e1;
+  --color-brand-secondary-hover: #372ec0;
+  --color-brand-secondary-light: #ecebfe;
+  
+  --color-brand-error: #ba1a1a;
+  --color-brand-error-container: #ffdad6;
+  --color-brand-on-error-container: #93000a;
+  --color-brand-warning: #d97706;
+  --color-brand-warning-container: #fef3c7;
+  --color-brand-success: #15803d;
+  --color-brand-success-container: #dcfce7;
+  --color-brand-info: #0369a1;
+  --color-brand-info-container: #e0f2fe;
+
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom styles and scrollbar overrides */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-surface);
+  color: var(--color-brand-on-surface);
+  margin: 0;
+  padding: 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-surface-dim);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-highest);
+}
